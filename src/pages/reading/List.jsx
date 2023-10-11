@@ -3,13 +3,13 @@ import React from 'react';
 const List = ({ nameList, selectedName }) => {
   console.log(nameList.length);
   return (
-    <div className=' mt-12'>
+    <div className='mt-12'>
       {selectedName && (
         <div className="flex flex-col items-center justify-center">
-          <p className="text-4xl mt-4 uppercase font-thin flex flex-col text-gray-300">
+          <p className="text-4xl mt-4 uppercase font-thin flex flex-col ">
             Reader {nameList.length + 1}:
           </p>
-          <p className="text-6xl font-bold uppercase text-white">{selectedName}</p>
+          <p className="text-6xl font-bold uppercase ">{selectedName}</p>
         </div>
       )}
      

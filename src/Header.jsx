@@ -1,10 +1,15 @@
 import React from 'react'
+import MenuButton from './components/MenuButton'
+import {TiThMenu} from "react-icons/ti"
 
+// Move this to the main app component
 const Header = ({onModal, selectedNamesOrder}) => {
   return (
-    <div className='h-20 w-full flex items-center justify-between px-4'>
-        <h1 className="text-3xl font-thin ">Reading Picker</h1>
-      {selectedNamesOrder.length > 0 ? <button className="border-2 border-white bg-blue-400 hover:bg-inherit active:bg-blue-400 duration-200 rounded-md py-1 px-4" onClick={onModal}>Order</button> : null}
+    <div className='h-20 w-full flex items-center justify-between px-4 bg-transparent py-4'>
+        {/* <h1 className="text-3xl font-thin cursor-pointer"><TiThMenu /></h1> */}
+      <div className="flex gap-4 bg-inherit">
+        {selectedNamesOrder.length > 0 ? <MenuButton onClick={onModal}>Order</MenuButton> : null} 
+      </div>
     </div>
   )
 }
