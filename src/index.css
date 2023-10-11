@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px); /* Apply the blur effect */
+    background-color: rgba(0, 0, 0, 0.5); /* Background color with transparency */
+    z-index: 10; /* Ensure it's above other elements */
+  }
