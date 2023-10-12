@@ -2,11 +2,14 @@ import React, { useState } from 'react'
 import Footer from '../../Footer'
 import CompModal from '../../components/CompModal'
 import ScoreInput from './ScoreInput'
+import ActionButtons from './ActionButtons'
+import WinnerPage from './WinnerPage'
 
 const CompetitionPage = () => {
   const [showModal, setShowModal] = useState(false)
   const [playerName, setPlayerName] = useState("")
   const [playerList, setPlayerList] = useState([])
+  const [showWinner, setShowWinner] = useState(false)
 
   const handleInput = (e) => {
     setPlayerName(e.target.value)
@@ -31,6 +34,13 @@ const handleModal = () => {
   setShowModal(!showModal)
 }
 
+const handleWinner = () => {
+  setShowWinner(!showWinner)
+}
+const handleResetWinner = () => {
+  setShowWinner(false)
+}
+
 const handleDelete = (index) => {
   const updatedPlayerList = playerList.filter((_, i) => i !== index);
   setPlayerList(updatedPlayerList);
@@ -38,9 +48,11 @@ const handleDelete = (index) => {
 
   return (
     <div className={`w-full h-screen relative bg-[#f1f3f2] text-[#495057] flex flex-col items-center ${showModal ? 'modal-open' : ''}`} >
-        <h1 className='text-5xl mt-6 font-bold'>Writing Competition</h1>
-        <div className="mt-10">
-          <button className="border-2 border-white bg-inherit hover:bg-white active:bg-gray-300 duration-200 rounded-md py-1 px-4 shadow-lg" onClick={() => setShowModal(!showModal)} >Add Players</button>
+        <h1 className='text-5xl mt-6 font-bold'>Competition</h1>
+        {!showWinner ? <><div className="mt-10">
+         
+          <ActionButtons onModal={handleModal} onWinner={handleWinner} />
+         
           {showModal && <div className="modal-background">
             <CompModal playerName={playerName} onInput={handleInput} onFormSubmit={handleSubmit} playerList={playerList} onModal={handleModal} onDelete={handleDelete} />
           </div>}
@@ -54,6 +66,10 @@ const handleDelete = (index) => {
               />)}
             </ul>
           </div>
+          </> 
+          :
+           <WinnerPage onReset={handleResetWinner} />     
+        }
     <Footer />
   </div>
   )

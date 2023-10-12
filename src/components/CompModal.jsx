@@ -1,7 +1,7 @@
 import React from 'react'
 import { BiTrash} from "react-icons/bi"
 
-const CompModal = ({onInput, playerName, playerList, onFormSubmit, onModal, onDelete}) => {
+const CompModal = ({onInput, playerName, playerList, onFormSubmit, onModal, onDelete, onWinnerModal}) => {
   return (
     <div className='absolute top-1/4 left-1/4 w-1/2 h-80 border-2 rounded-lg border-white bg-[#54535a] flex flex-col items-center overflow-y-scroll pt-4 text-white'>
 
