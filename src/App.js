@@ -4,6 +4,7 @@ import ReadingPage from "./pages/reading/ReadingPage";
 import {TiThMenu} from "react-icons/ti"
 import Home from "./pages/Home";
 import CompetitionPage from "./pages/competition/CompetitionPage";
+import Game from "./pages/game/Game";
 
 function App() {
  const [showNav, setShowNav] = useState(false)
@@ -30,6 +31,9 @@ function App() {
         <li className='cursor-pointer hover:text-white  active:text-gray-500 duration-200'>
           <Link to="/competition">competition</Link>
         </li>
+        <li className='cursor-pointer hover:text-white  active:text-gray-500 duration-200'>
+          <Link to="/game">Game</Link>
+        </li>
       </ul>
       
          {/* Wrap these in routes */}
@@ -37,6 +41,7 @@ function App() {
             <Route path="/" element={<Home/>} />
             <Route path="/reading" element={<ReadingPage />} />
             <Route path="/competition" element={<CompetitionPage />} />
+            <Route path="/game" element={<Game />} />
           </Routes>
                
          
