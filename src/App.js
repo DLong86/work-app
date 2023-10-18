@@ -5,6 +5,7 @@ import {TiThMenu} from "react-icons/ti"
 import Home from "./pages/Home";
 import CompetitionPage from "./pages/competition/CompetitionPage";
 import Game from "./pages/game/Game";
+import Navbar from "./Navbar";
 
 function App() {
  const [showNav, setShowNav] = useState(false)
@@ -22,18 +23,7 @@ function App() {
       
       {/* --- NAVBAR --- */}
       <ul className={!showNav ? "flex flex-col justify-around pl-6 mt-0 text-3xl absolute top-0 left-0 w-full sm:w-1/3 h-full z-20 bg-black bg-opacity-80 uppercase text-gray-400 translate-x-[-100%] duration-300" : "flex flex-col justify-around pl-6 mt-0 text-3xl absolute top-0 left-0 w-full sm:w-1/3 h-full z-20 bg-black bg-opacity-80 uppercase text-gray-400 translate-x-0 duration-300"}>
-        <li className='cursor-pointer hover:text-white active:text-gray-500 duration-200'>
-          <Link to="/">Home</Link>
-        </li>
-        <li className='cursor-pointer hover:text-white  active:text-gray-500 duration-300'>
-          <Link to="/reading">Reading Picker</Link>
-         </li>
-        <li className='cursor-pointer hover:text-white  active:text-gray-500 duration-200'>
-          <Link to="/competition">competition</Link>
-        </li>
-        <li className='cursor-pointer hover:text-white  active:text-gray-500 duration-200'>
-          <Link to="/game">Game</Link>
-        </li>
+        <Navbar/>
       </ul>
       
          {/* Wrap these in routes */}

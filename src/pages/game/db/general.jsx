@@ -12,6 +12,18 @@ const general = [
     {question: "What's your favourite restaurant?"},
     {question: "Please tell the class an interesting fact about yourself?"},
     {question: "What famous person would you like to meeet and why?"},
+    {question: "If you could have a pet, what would it be?"},
+    {question: "Where was the last place you went to with your parents?"},
+    {question: "Do your grandparents live in Tokyo?"},
+    {question: "Your favourite place in Tokyo?"},
+    {question: "How often do you eat snacks?"},
+    {question: "Last time you laughed?"},
+    {question: "What do you and your friends like to do together?"},
+    {question: "Have you ever witnessed a crime?"},
+    {question: "Last time you cried?"},
+    {question: "What's your favourite season, why?"},
+    {question: "Have you ever broken a bone?"},
+    {question: "Something you would like to buy?"},
   ];
   
   export default general;

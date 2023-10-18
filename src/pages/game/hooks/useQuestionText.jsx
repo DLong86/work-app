@@ -4,7 +4,7 @@ import sports from "../db/sports";
 import travel from "../db/travel"
 import general from "../db/general"
 import life from '../db/life';
-import health from "../db/health"
+import random from "../db/random"
 
 const useQuestionText = () => {
     const [text, setText] = useState({
@@ -14,8 +14,8 @@ const useQuestionText = () => {
       sports2: "sports",
       travel: "travel",
       travel2: "travel",
-      health: "health",
-      health2: "health",
+      random: "random",
+      random2: "random",
       life: "life",
       life2: "life",
       general: "general",
@@ -82,19 +82,19 @@ const useQuestionText = () => {
       }
     };
   
-    const handleHealth = (e) => {
-      const item = health[Math.floor(Math.random() * health.length)].question;
+    const handleRandom = (e) => {
+      const item = random[Math.floor(Math.random() * random.length)].question;
       const divId = e.target.id;
   
-      if (divId === 'health' || divId === 'health2') {
+      if (divId === 'random' || divId === 'random2') {
         setText((prevTexts) => ({
           ...prevTexts,
-          [divId]: prevTexts[divId] === 'health' ? item : 'health',
+          [divId]: prevTexts[divId] === 'random' ? item : 'random',
         }));
       }
     };
   
-    return { text, handleHobbies, handleSports, handleTravel, handleGeneral, handleLife, handleHealth };
+    return { text, handleHobbies, handleSports, handleTravel, handleGeneral, handleLife, handleRandom };
   };
 
 export default useQuestionText;

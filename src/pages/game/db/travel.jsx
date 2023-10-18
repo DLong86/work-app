@@ -18,7 +18,19 @@ const travel = [
     {question: "Name two cities you would most like to visit?"},
     {question: "What foreign country's culture most interests you, why?"},
     {question: "Do you like traveling by Aeroplane, please explain."},
-    {question: "Have you ever used English when traveling abroad? Please explain."},
+    {question: "Have you ever used English when travelling abroad? Please explain."},
+    {question: "Where would you like to visit in Asia?"},
+    {question: "If you had to leave Japan, where would you live and why?"},
+    {question: "A country you'd never like to visit, why?"},
+    {question: "Favourite place in Tokyo?"},
+    {question: "Best place you've ever been?"},
+    {question: "Apart from English, what language would you like to learn?"},
+    {question: "Would you like to climb Mount Everest?"},
+    {question: "Would you like to see the Great Pyramid in Egypt?"},
+    {question: "Could you name the seven wonders of the world?"},
+    {question: "Would you like to visit Australia?"},
+    {question: "Do you know what country your teacher is from?"},
+    {question: "Which country would you like to visit with your best friend?"},
   ];
   
   export default travel;

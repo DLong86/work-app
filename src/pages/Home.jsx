@@ -8,21 +8,36 @@ const Home = () => {
         <h1 className='text-5xl'>
         <Typed
 						className='md:text-7xl sm:text-4xl text-xl font-semibold pl-2 md:pl-4'
+						// strings={[
+						// 	'Hello',
+						// 	'Ciao',
+						// 	'olá',
+						// 	'Bonjour',
+						// 	'こんにちは',
+						// 	'Guten Tag',
+						// 	'Good-Day',
+						// 	'مرحبًا',
+						// 	"Hiya",
+						// 	"Yo!",
+						// 	"Aloha",
+						// 	"안녕하세요"
+
+						// ]}
 						strings={[
-							'Hello',
-							'Ciao',
-							'olá',
-							'Bonjour',
-							'こんにちは',
-							'Guten Tag',
-							'Good-Day',
-							'مرحبًا',
-							"Hiya",
-							"Yo!",
-							"Aloha",
-							"안녕하세요"
+							'Hello,',
+							'Please',
+							'Be',
+							'Nice',
+							'To',
+							'David!',
+							
 
 						]}
+						// strings={[
+						// 	'Be',
+						// 	'Quiet',
+						// 	'Taichi!',
+						// ]}
 						typeSpeed={120}
 						backSpeed={150}
 						loop
