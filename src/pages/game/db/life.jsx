@@ -1,7 +1,7 @@
 const life = [
-    { question: "What makes you happy every day?" },
-    { question: "What is your favourite season and why?" },
-    { question: "When is your birthday?" },
+    {question: "What makes you happy every day?" },
+    {question: "What is your favourite season and why?" },
+    {question: "When is your birthday?" },
     {question: "What job would you like to do in the future and why?"},
     {question: "What is your favourite subject at school and why?"},
     {question: "What is your favourite thing you own?"},
@@ -19,6 +19,17 @@ const life = [
     {question: "What stories have you seen in the news lately?"},
     {question: "Do you like to shop alone or with other people, why?"},
     {question: "What's your favourite non-Japanese food?"},
+    {question: "Do you have any bad habits?"},
+    {question: "Do you collect anything?"},
+    {question: "Do you have any chores at home?"},
+    {question: "What do you like to do with your parents?"},
+    {question: "Do you think aliens are real?"},
+    {question: "Have you ever argued with your best friend?"},
+    {question: "Something you really don't like?"},
+    {question: "Your favourite possession?"},
+    {question: "The best thing about your school?"},
+    {question: "The worst thing about your school?"},
+    {question: "Would you like to have any pets?"},
   ];
   
   export default life;

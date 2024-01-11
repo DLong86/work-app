@@ -1,7 +1,7 @@
 const hobbies = [
-    { question: "List three hobbies you enjoy to do at home." },
-    { question: "What was your favourite hobby five years ago?" },
-    { question: "Ask the person next to you what their hobbies are." },
+    {question: "List three hobbies you enjoy to do at home." },
+    {question: "What was your favourite hobby five years ago?" },
+    {question: "Ask the person next to you what their hobbies are." },
     {question: "What do you like to do in your own time?"},
     {question: "Do you prefer to stay home or go outside in your free time?"},
     {question: "Why is it important to have hobbies?"},
@@ -19,7 +19,15 @@ const hobbies = [
     {question: "What is your mum's hobby?"},
     {question: "What is your dad's hobby"},
     {question: "An example of a dangerous hobby"},
-
+    {question: "Have you ever/would like to go camping?"},
+    {question: "What do you do when you are bored?"},
+    {question: "What genre of music do you like most?"},
+    {question: "Do you like going to the beach? why/not?"},
+    {question: "Last time you did your hobby?"},
+    {question: "Have you ever tried cooking?"},
+    {question: "Have you ever been hiking?"},
+    {question: "What will you do on your next day off?"},
+    {question: "What do you like to do on public holidays?"},
   ];
   
   export default hobbies;

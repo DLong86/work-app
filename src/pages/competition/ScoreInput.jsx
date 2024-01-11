@@ -15,7 +15,7 @@ const ScoreInput = ({ player, onUpdate }) => {
   const totalScore = player.scores.reduce((total, score) => total + score, 0);
 
   return (
-    <div className="w-full sm:w-1/2 flex flex-row items-center justify-between p-2 rounded-md shadow-lg bg-gray-200 hover:bg-[#ffe8cc]">
+    <div className="w-full sm:w-1/2 flex flex-row items-center justify-between p-2 rounded-md shadow-lg bg-gray-200 hover:bg-pink-200">
       <h2 className="capitalize">{player.name}</h2>
       <div className='flex gap-2'>
         <div className="flex gap-0">
@@ -29,15 +29,8 @@ const ScoreInput = ({ player, onUpdate }) => {
           />
           <button className='bg-white rounded-r-md pr-1 text-2xl' onClick={handleAddScore}>+</button>
         </div>
-        <input className="w-12 px-2 border-white bg-gray-200 rounded-md" value={totalScore} disabled/> {/* Display total score */}
+        <input className="w-12 px-2 border-white bg-gray-200 rounded-md" value={totalScore} disabled/>
       </div>
-      {/* <ul className="">
-        {player.scores.map((score, index) => (
-          <li key={index} className="">
-            Score: {score}
-          </li>
-        ))}
-      </ul> */}
     </div>
   );
 };

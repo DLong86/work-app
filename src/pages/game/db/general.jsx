@@ -1,7 +1,7 @@
 const general = [
-    { question: "What was your favourite movie when you were younger?" },
-    { question: "What is your favourite meal?" },
-    { question: "What are your favourite snacks to eat?" },
+    {question: "What was your favourite movie when you were younger?" },
+    {question: "What is your favourite meal?" },
+    {question: "What are your favourite snacks to eat?" },
     {question: "What time do you go to sleep and wake up?"},
     {question: "Please talk about your favourite memory."},
     {question: "If you one a billion yen, what things would you buy and do?"},

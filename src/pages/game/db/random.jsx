@@ -24,6 +24,8 @@ const random = [
     {question: "If you could have a superpower, what would it be?"},
     {question: "Would you like the power to travel through time?"},
     {question: "If you were granted 3 wishes what would they be?"},
+    {question: "favourite fast food restaurant?"},
+
   ];
   
   export default random;
